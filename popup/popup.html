@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/popup.css">
+</head>
+<body ng-app="arguman">
+
+	<!-- logo -->
+	<img src="http://arguman.org/static/img/logo.png" alt="">
+	
+
+	<!-- #feed -->
+	<div id="feed" ng-controller="argumanCtrl">
+
+		<!-- .feeds -->
+		<div class="feeds" ng-repeat="argument in feed">
+			<div class="feeds-writer"><img src="{{ argument.user.avatar }}" alt="{{argument.user.username}}"></div>
+			<div class="feeds-text">
+				<div class="feeds-title" ng-click="argumentGo(argument.slug)">{{ argument.title }}</div>
+				<div class="feeds-label" ng-click="argumentUser(argument.user.username)"><span>{{argument.user.username}}</span> gönderdi</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- /end .feeds -->
+
+
+	</div>
+	<!-- /end #feed -->
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-md5.min.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>

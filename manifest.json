@@ -1,0 +1,25 @@
+{
+	"manifest_version" : 2,
+	"name" : "arguman",
+	"version" : "0.1.0",
+	"description" : "arguman.org chrome eklentisi",
+	"author" : "Samet Aydemir",
+	"browser_action": {
+		"default_title" : "Arguman.org",
+		"default_popup" : "popup/popup.html"
+	},
+
+	
+	"background" : {
+		"scripts" : ["background.js"],
+		"persistent" : false
+	},
+
+	 
+	"permissions": [
+  		"http://*/"
+	],
+
+	"icons": { "32": "popup/icon/icon.png"}
+
+}
