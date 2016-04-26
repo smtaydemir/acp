@@ -7,3 +7,7 @@
 	<br>
 	Arguman Chrome Extension
 </h1>
+
+<p align="center">
+<img src="https://s3-eu-west-1.amazonaws.com/cartoontag/arguman.png">
+</p>
